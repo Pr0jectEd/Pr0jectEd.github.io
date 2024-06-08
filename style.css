@@ -1,5 +1,7 @@
 /*contenido del archivo datos.html*/
+
 .box{
+    padding:10px;
     width: 500px;
     height: 250px;
     background-color: darkblue;
@@ -14,5 +16,24 @@ p{
 }
 h1{
     color:white;
+}
+/*
+button{
+    height:100px;
+    width: 100px;
+}
+*/
+.btout{
+    
+    background-color: yellow;
+}
+
+.smallbox{
+    padding:10px;
+    width: 500px;
+    height: 100px;
+    background-color: darkblue;
+    margin:10px;
+    float: left;
 }
 
