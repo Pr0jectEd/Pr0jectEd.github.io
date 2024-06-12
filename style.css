@@ -1,12 +1,21 @@
 /*contenido del archivo datos.html*/
 
+body{
+    background-color: whitesmoke;
+}
+
 .box{
     padding:10px;
     width: 500px;
-    height: 250px;
-    background-color: darkblue;
+    height: 260px;
+    border-radius: 8px;
+    background-color: black;
     margin:10px;
     float: left;
+}
+
+.box:hover {
+    transform: translateY(-5px);/*Hace "saltar" el objeto*/
 }
 
 p{
@@ -17,23 +26,52 @@ p{
 h1{
     color:white;
 }
-/*
-button{
-    height:100px;
-    width: 100px;
+
+h2{
+    font-size:medium;
+    font-weight: bold;
+    color:brown;
 }
-*/
+
+button{
+
+    /*display: block;*/
+    /*margin: 10px auto;*/
+    /*padding: 10px 20px;*/
+    /*font-size: 16px;*/
+    border: none;
+    border-radius: 5px;
+    color:black;
+    font-weight: bold;
+    /*background-color: aliceblue;
+    cursor: pointer;
+    transition: background-color 0.3s ease;*/
+}
+
+.button:hover{
+    background-color:red;
+}
+
 .btout{
     
     background-color: yellow;
+    border-radius: 8px;
+}
+
+.btout:hover{
+    background-color: yellowgreen;
 }
 
 .smallbox{
     padding:10px;
     width: 500px;
     height: 100px;
-    background-color: darkblue;
+    border-radius: 8px;
+    background-color: rgb(85, 3, 85);
     margin:10px;
     float: left;
 }
 
+.smallbox:hover {/*Hace "saltar" el objeto*/
+    transform: translateY(-5px);
+}

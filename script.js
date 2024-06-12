@@ -146,8 +146,8 @@ document.addEventListener('DOMContentLoaded', (event) => {
             resultadoElement.textContent = valorFijo.toFixed(2);
             contadorElement11.textContent = contadorSumas11;
             contadorElement950.textContent = contadorSumas950;
-            contadorElement950.textContent = contadorSumasEnfant;
-            contadorElement950.textContent = contadorSumasEtudiant;
+            contadorElementEnfant.textContent = contadorSumasEnfant;
+            contadorElementEtudiant.textContent = contadorSumasEtudiant;
             actualizarResultadoGlobal();
         });
         /*Maison Hantée*/
