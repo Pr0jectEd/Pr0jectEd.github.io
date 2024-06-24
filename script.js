@@ -68,6 +68,9 @@ document.addEventListener('DOMContentLoaded', (event) => {
         const sumaBtnPromoEnfant = document.getElementById('sumaBtnPromoEnfant');
         const resetBtnPromoEnfant= document.getElementById('resetBtnPromoEnfant');
         const resetBtnPack = document.getElementById('resetBtnPack')
+        /*Finalization*/
+        const resetBtnTransaction = document.getElementById('resetBtnTransaction')
+        const acceptBtnTransaction = document.getElementById('acceptBtnTransaction')
         
          
     /*Creación de los métodos)*/
