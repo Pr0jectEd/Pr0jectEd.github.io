@@ -257,8 +257,77 @@ document.addEventListener('DOMContentLoaded', (event) => {
             contadorElementPromoAdult.textContent = contadorSumasPromoAdult;
             contadorElementPromoEnfant.textContent = contadorSumasPromoEnfant;
             contadorElementPromoEtudiant.textContent = contadorSumasPromoEtudiant;
+            contadorElementMH.textContent = contadorSumas11;
+            contadorElementMHEsp.textContent = contadorSumas950;
             actualizarResultadoGlobal();
            
         });
+
+/*Boton de anulación*/
+        resetBtnTransaction.addEventListener('click', () => {
+
+            valorFijo = 0;
+            contadorSumas11 = 0;
+            contadorSumas950 = 0;
+            contadorSumasEnfant = 0;
+            contadorSumasEtudiant = 0;        
+            resultadoElement.textContent = valorFijo.toFixed(2);
+            contadorElement11.textContent = contadorSumas11;
+            contadorElement950.textContent = contadorSumas950;
+            contadorElementEnfant.textContent = contadorSumasEnfant;
+            contadorElementEtudiant.textContent = contadorSumasEtudiant;
+
+            valorFijoMH = 0;
+            contadorSumasMH = 0;
+            contadorSumasMHEsp = 0;
+            resultadoElementMH.textContent = valorFijoMH.toFixed(2);
+            contadorElementMH.textContent = contadorSumas11;
+            contadorElementMHEsp.textContent = contadorSumas950;
+
+            valorFijoPromo = 0;
+            contadorSumasPromoAdult = 0;
+            contadorSumasPromoEnfant = 0;
+            contadorSumasPromoEtudiant = 0;
+            resultadoElementPromo.textContent = valorFijoPromo.toFixed(2);
+            contadorElementPromoAdult.textContent = contadorSumasPromoAdult;
+            contadorElementPromoEnfant.textContent = contadorSumasPromoEnfant;
+            contadorElementPromoEtudiant.textContent = contadorSumasPromoEtudiant;
+            contadorElementMH.textContent = contadorSumas11;
+            contadorElementMHEsp.textContent = contadorSumas950;
+            
+
+            actualizarResultadoGlobal();
+        });
+
+
+        document.getElementById('acceptBtnTransaction').addEventListener('click', function() {
+            const tickets = {
+                adult: document.getElementById('contador11').innerText,
+                handicape: document.getElementById('contador950').innerText,
+                etudiant: document.getElementById('contadorEtudiant').innerText,
+                enfant: document.getElementById('contadorEnfant').innerText,
+                standard: document.getElementById('contadorMH').innerText,
+                special: document.getElementById('contadorMHEsp').innerText,
+                packAdult: document.getElementById('contadorPromoAdult').innerText,
+                packEtudiant: document.getElementById('contadorPromoEtudiant').innerText,
+                packEnfant: document.getElementById('contadorPromoEnfant').innerText,
+                resGlobal: document.getElementById('resultadoGlobal').innerText
+                
+                
+            };
+
+            const params = new URLSearchParams({
+                resultadoGlobal,
+                ...tickets
+            });
+        
+            const url = new URL('tickets.html', window.location.href);
+            Object.keys(tickets).forEach(key => url.searchParams.append(key, tickets[key]));
+        
+            window.location.href = url;
+        }); 
+
+       
+
 
     });

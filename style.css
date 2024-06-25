@@ -14,10 +14,19 @@ body {
     margin: 5px;
     float: left;
 }
+.promo{
+    width: 500px;
+    height: 200px;
+    padding: 10px;
+    border-radius: 8px;
+    background-color:rgb(105, 1, 105);
+    margin: 5px;
+    float: left;
+}
 .box {
     padding: 10px;
     width: 500px;
-    height: 230px;
+    height: 270px;
     border-radius: 8px;
     background-color: black;
     margin: 5px;
@@ -34,6 +43,26 @@ body {
     float: left;
 }
 
+.footer {
+    width: 500px;
+    height: 400px;
+    padding: 10px;
+    border-radius: 8px;
+    background-color:rgb(223, 15, 63);
+    margin: 5px;
+    float: left;
+}
+
+.box_ticket {
+    width: 500px;
+    height: 400px;
+    padding: 10px;
+    border-radius: 8px;
+    background-color:rgb(105, 1, 105);
+    margin: 5px;
+    float: left;
+}
+
 .box:hover {
     transform: translateY(-5px); /*Hace "saltar" el objeto*/
 }
@@ -41,7 +70,7 @@ body {
 .smallbox {
     padding: 10px;
     width: 500px;
-    height: 100px;
+    height: 150px;
     border-radius: 8px;
     background-color: blueviolet;
     margin: 10px;
@@ -52,9 +81,7 @@ body {
     transform: translateY(-5px); /*Hace "saltar" el objeto*/
 }
 
-.footer{
-    background-color: greenyellow;
-}
+
 
 /*Definición de Letras y Parrafos*********************************************************************************/
 p {
@@ -73,6 +100,12 @@ h2 {
     font-size:20px;
     font-weight: bold;
     color: orange;
+}
+
+h3 {
+    font-size:20px;
+    font-weight:bolder;
+    color: black;
 }
 
 /*Clasificación de Botones**************************************************************************************/
@@ -108,6 +141,14 @@ button {
     background-color: brown;
 }
 
+.Btn-tickets{
+    background-color: yellow;
+    border-radius: 8px;
+    height: 100px;
+    width: 100px;
+    
+}
+
 .image-button {
     background-color: transparent; /* Fondo transparente */
     border: none; /* Sin borde */
@@ -120,6 +161,7 @@ button {
     height: 50px; /* Altura de la imagen */
 }
 
+
 .image-banner{
 
     width:495px;
@@ -128,48 +170,13 @@ button {
 
 }
 
+.image-promo{
 
-/* Botón de Audio 
-#audio-container, #audio-container-2 {
-    display: flex;
-    align-items: center;
-    margin-top: 20px;
+    width:500px;
+    height:200px;
+    border-radius:20px ;
 }
 
-#play-button, #play-button-2 {
-    margin-right: 15px;
-    padding: 15px 30px;
-    font-size: 20px;
-    background-color: #007bff;
-    color: white;
-    border: none;
-    border-radius: 50px;
-    cursor: pointer;
-    transition: background-color 0.3s ease, transform 0.3s ease;
-}
-
-#play-button:hover, #play-button-2:hover {
-    background-color: #0056b3;
-    transform: scale(1.1);
-}
-
-#progress, #progress-2 {
-    width: 100%;
-    height: 10px;
-    background-color: #e0e0e0;
-    position: relative;
-    border-radius: 5px;
-}
-
-#progress-bar, #progress-bar-2 {
-    width: 0;
-    height: 100%;
-    background-color: #76c7c0;
-    position: absolute;
-    top: 0;
-    left: 0;
-    border-radius: 5px;
-}*/
 
 
 
@@ -191,15 +198,7 @@ button {
 }
 
 .play-button {
-    /*margin-right: 15px;
-    padding: 15px 30px;
-    font-size: 20px;
-    background-color: #007bff;
-    color: white;
-    border: none;
-    border-radius: 50px;
-    cursor: pointer;
-    transition: background-color 0.3s ease, transform 0.3s ease;*/
+
     margin-right: 15px;
     padding: 15px 30px;
     font-size: 20px;
@@ -232,4 +231,37 @@ button {
     top: 0;
     left: 0;
     border-radius: 5px;
+}
+
+/*Boton Tickets**********-**/
+
+
+.ticket-button {
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    margin-left: 85px;
+    background-color: orange;
+    border-radius: 8px;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.ticket-button img {
+    display: block;    
+    padding: 10px;
+    width: 300px;
+    height: 200px;
+}
+
+.ticket-button span {
+    display: block;
+    background-color: orangered;
+    text-align: center;
+    font-size: 18px;
+}
+
+.ticket-button:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tickets Comprados</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <div class="maisonmusee">
+        <h1>Tickets Comprados</h1>
+        <h2>Musee de l'inquisition</h2>
+        <p>Adulto: <span id="result-adult"></span></p>
+        <p>Handicape: <span id="result-handicape"></span></p>
+        <p>Etudiant: <span id="result-etudiant"></span></p>
+        <p>Enfant: <span id="result-enfant"></span></p>
+        <h2>Maison Hantée</h2>
+        <p>Standard: <span id="result-standard"></span></p>
+        <p>Special: <span id="result-special"></span></p>
+        <h2>Pack Promo</h2>
+        <p>Pack Adult: <span id="result-packAdult"></span></p>
+        <p>Pack Etudiant: <span id="result-packEtudiant"></span></p>
+        <p>Pack Enfant: <span id="result-packEnfant"></span></p>
+        <h2>Total</h2>
+        <p>Valor Total: <span id="resul-global"></span></p>
+
+    </div>
+
+    <script>
+
+        
+        document.addEventListener('DOMContentLoaded', function() {
+            const params = new URLSearchParams(window.location.search);
+            document.getElementById('result-adult').innerText = params.get('adult');
+            document.getElementById('result-handicape').innerText = params.get('handicape');
+            document.getElementById('result-etudiant').innerText = params.get('etudiant');
+            document.getElementById('result-enfant').innerText = params.get('enfant');
+            document.getElementById('result-standard').innerText = params.get('standard');
+            document.getElementById('result-special').innerText = params.get('special');
+            document.getElementById('result-packAdult').innerText = params.get('packAdult');
+            document.getElementById('result-packEtudiant').innerText = params.get('packEtudiant');
+            document.getElementById('result-packEnfant').innerText = params.get('packEnfant');
+            document.getElementById('resul-global').innerText = params.get('resGlobal');
+        });
+    </script>
+</body>
+</html>
