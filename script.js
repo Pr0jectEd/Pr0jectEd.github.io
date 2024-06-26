@@ -172,11 +172,14 @@ document.addEventListener('DOMContentLoaded', (event) => {
         });
     
         sumaBtnMHEsp.addEventListener('click', () => {
+
+            /*
             valorFijoMH += 15;
             contadorSumasMHEsp += 1;
             resultadoElementMH.textContent = valorFijoMH.toFixed(2);
             contadorElementMHEsp.textContent = contadorSumasMHEsp;
-            actualizarResultadoGlobal();
+            actualizarResultadoGlobal();*/
+            alert("Only Valid during special events");
         });
     
         resetBtnMHEsp.addEventListener('click', () =>{

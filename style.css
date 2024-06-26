@@ -33,6 +33,17 @@ body {
     float: left;
 }
 
+
+.promo-box{
+    padding: 10px;
+    width: 500px;
+    height: 270px;
+    border-radius: 8px;
+    background-color: blueviolet;
+    margin: 5px;
+    float: left;
+}
+
 .maisonmusee {
     width: 500px;
     height: 1000px;
@@ -58,7 +69,7 @@ body {
     height: 400px;
     padding: 10px;
     border-radius: 8px;
-    background-color:rgb(105, 1, 105);
+    background-color:black;
     margin: 5px;
     float: left;
 }
@@ -72,7 +83,7 @@ body {
     width: 500px;
     height: 150px;
     border-radius: 8px;
-    background-color: blueviolet;
+    background-color: grey;
     margin: 10px;
     float: left;
 }
@@ -86,8 +97,20 @@ body {
 /*Definición de Letras y Parrafos*********************************************************************************/
 p {
     color: whitesmoke;
+    font-size:20px;
     margin: 30px;
+    border: 2px dashed yellow;
+    padding: 10px;
+    height: 20px;
+    /*width: 600px;
+    text-align: justify;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-style: italic;
+    /*margin: 30px;*/
+    
 }
+
+
 
 h1 {
     color: white;
@@ -106,6 +129,15 @@ h3 {
     font-size:20px;
     font-weight:bolder;
     color: black;
+}
+
+.h4 {
+    color:greenyellow;
+    font-size:20px;
+    margin: 30px;
+    border: 2px dashed yellow;
+    padding: 10px;
+    height: 20px;
 }
 
 /*Clasificación de Botones**************************************************************************************/
