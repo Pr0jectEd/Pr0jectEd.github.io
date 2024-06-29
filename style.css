@@ -99,7 +99,7 @@ p {
     color: whitesmoke;
     font-size:20px;
     margin: 30px;
-    border: 2px dashed yellow;
+    border: 2px dashed grey;
     padding: 10px;
     height: 20px;
     /*width: 600px;
@@ -155,6 +155,8 @@ button {
 .btout {
     background-color: yellow;
     border-radius: 8px;
+    height: 35px;
+    width: 95px;
 }
 
 .btout:hover {
@@ -179,6 +181,16 @@ button {
     height: 100px;
     width: 100px;
     
+}
+
+.Calcular{
+    height: 140px;
+    width: 100px;
+}
+
+.Clear{
+    height: 35px;
+    width: 95px;
 }
 
 .image-button {

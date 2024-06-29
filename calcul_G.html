@@ -3,47 +3,48 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Suma con JavaScript</title>
+    <title>German Calcul</title>
     <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
     
     <div class="box">
         <h1>Inquisitionsmuseum:€<span id="resultado">0</span></h1>
-        <button id="sumaBtn11">Erwachsene <hr>11 €<hr>Ticket(s): <h2><span id="contador11">0</span></h2></button>
-        <button id="sumaBtn950">Deaktiviert<hr>9.50 €<hr>Ticket(s): <h2><span id="contador950">0</span></h2></button>
-        <button id="sumaBtnEtudiant">Student<hr>9.50 €<hr>Ticket(s): <h2><span id="contadorEtudiant">0</span></h2></button>
-        <button id="sumaBtnEnfant">Kind<hr>8.50 €<hr>Ticket(s):<h2><span id="contadorEnfant">0</span></h2></button><hr>
-        <button id="resetBtn11">Clear Erwc.<hr></button>
-        <button id="resetBtn950">Clear Deak.<hr></button>
-        <button id="resetBtnEtudiant">Clear Stud.<hr></button>
-        <button id="resetBtnEnfant">Clear Kind<hr></button>
+        <button class="Calcular" id="sumaBtn11">Erwachsene <hr>11 €<hr>Ticket(s): <h2><span id="contador11">0</span></h2></button>
+        <button class="Calcular" id="sumaBtn950">Deaktiviert<hr>9.50 €<hr>Ticket(s): <h2><span id="contador950">0</span></h2></button>
+        <button class="Calcular" id="sumaBtnEtudiant">Student<hr>9.50 €<hr>Ticket(s): <h2><span id="contadorEtudiant">0</span></h2></button>
+        <button class="Calcular" id="sumaBtnEnfant">Kind<hr>8.50 €<hr>Ticket(s):<h2><span id="contadorEnfant">0</span></h2></button><hr>
+        <button class="Clear" id="resetBtn11">Clear Erwc.<hr></button>
+        <button class="Clear" id="resetBtn950">Clear Deak.<hr></button>
+        <button class="Clear" id="resetBtnEtudiant">Clear Stud.<hr></button>
+        <button class="Clear" id="resetBtnEnfant">Clear Kind<hr></button>
         <button class="btout" id="resetBtnMusee" >Alles löschen<hr></button>
         
         
     </div>
     <div class="box">
         <h1>Spukhaus:€<span id="resultadoMH">0</span></h1>
-        <button id="sumaBtnMH">Standardticket <hr>10 €<hr>Ticket(s):<h2><span id="contadorMH">0</span></h2></button>
-        <button id="sumaBtnMHEsp">Besonders<hr>15 €<hr>Ticket(s):<h2><span id="contadorMHEsp">0</span></h2></button><hr>
-        <button id="resetBtnMH">Clear Standard<hr></button>
-        <button id="resetBtnMHEsp">Clear Besonders<hr></button>
+        <button class="Calcular" id="sumaBtnMH">Standardticket <hr>10 €<hr>Ticket(s):<h2><span id="contadorMH">0</span></h2></button>
+        <button class="Calcular" id="sumaBtnMHEsp">Besonders<hr>15 €<hr>Ticket(s):<h2><span id="contadorMHEsp">0</span></h2></button><hr>
+        <button class="Clear" id="resetBtnMH">Clear St.<hr></button>
+        <button class="Clear" id="resetBtnMHEsp">Clear Bes.<hr></button>
         <button class="btout" id="resetBtnMaison" >Alles löschen<hr></button>
         
     </div>
     <div class="box">
         <h1>Pack Promo:€<span id="resultadoPromo">0</span></h1>
-        <button id="sumaBtnPromoAdult">Pack Adult <hr>19 €<hr>Ticket(s):<h2><span id="contadorPromoAdult">0</span></h2></button>
-        <button id="sumaBtnPromoEtudiant">Pack Etudiant<hr>17 €<hr>Ticket(s):<h2><span id="contadorPromoEtudiant">0</span></h2></button>
-        <button id="sumaBtnPromoEnfant">Pack Enfant<hr>16 €<hr>Ticket(s):<h2><span id="contadorPromoEnfant">0</span></h2></button><hr>
-        <button id="resetBtnPromoAdult">Clear Adult<hr></button>
-        <button id="resetBtnPromoEtudiant">Clear Etudiant<hr></button>
-        <button id="resetBtnPromoEnfant">Clear Enfant<hr></button>
-        <button class="btout" id="resetBtnPack" >Clear Tout<hr></button>
+        <button  class="Calcular"id="sumaBtnPromoAdult">Pack Erwach. <hr>19 €<hr>Ticket(s):<h2><span id="contadorPromoAdult">0</span></h2></button>
+        <button class="Calcular" id="sumaBtnPromoEtudiant">Pack Student<hr>17 €<hr>Ticket(s):<h2><span id="contadorPromoEtudiant">0</span></h2></button>
+        <button class="Calcular" id="sumaBtnPromoEnfant">Pack Kind<hr>16 €<hr>Ticket(s):<h2><span id="contadorPromoEnfant">0</span></h2></button><hr>
+        <button class="Clear" id="resetBtnPromoAdult">Clear Erwc.<hr></button>
+        <button class="Clear" id="resetBtnPromoEtudiant">Clear Stud.<hr></button>
+        <button  class="Clear"id="resetBtnPromoEnfant">Clear Kind<hr></button>
+        <button class="btout" id="resetBtnPack" >Alles löschen<hr></button>
         
     </div>
     <div class="smallbox"><h1>Gesamt:€<span id="resultadoGlobal">0</span><hr>
-        <button class="btout valida" id="acceptBtnTransaction" >Validierung<hr></button>
+        <!--<button class="btout valida" id="acceptBtnTransaction" >Validierung<hr></button>-->
+        <button class="btout valida" id="acceptBtnTransaction" data-page="tickets_G.html">Validierung<hr></button>
         <button class="btout anul" id="resetBtnTransaction" >Annulation<hr></button>
     </div>
     

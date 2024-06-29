@@ -315,21 +315,17 @@ document.addEventListener('DOMContentLoaded', (event) => {
                 packEtudiant: document.getElementById('contadorPromoEtudiant').innerText,
                 packEnfant: document.getElementById('contadorPromoEnfant').innerText,
                 resGlobal: document.getElementById('resultadoGlobal').innerText
-                
-                
             };
-
+        
+            const pageName = this.getAttribute('data-page'); // Get the page name from the button's data attribute
+        
             const params = new URLSearchParams({
-                resultadoGlobal,
                 ...tickets
             });
-        
-            const url = new URL('tickets.html', window.location.href);
-            Object.keys(tickets).forEach(key => url.searchParams.append(key, tickets[key]));
-        
+            const url = `${pageName}?${params.toString()}`;
+    
             window.location.href = url;
-        }); 
-
+        });
        
 
 

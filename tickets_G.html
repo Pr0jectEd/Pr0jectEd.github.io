@@ -3,26 +3,30 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tickets Comprados</title>
+    <title>Ticketauswahl</title>
     <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
     <div class="maisonmusee">
-        <h1>Tickets Comprados</h1>
-        <h2>Musee de l'inquisition</h2>
-        <p>Adulto: <span id="result-adult"></span></p>
-        <p>Handicape: <span id="result-handicape"></span></p>
-        <p>Etudiant: <span id="result-etudiant"></span></p>
-        <p>Enfant: <span id="result-enfant"></span></p>
-        <h2>Maison Hantée</h2>
+        
+        <h1>Ticketauswahl</h1>
+        <h2>Gesamtauswahl</h2>
+        <p style="color:greenyellow"><span id="resul-global"></span> €</p>
+        <h2>Inquisitionsmuseum</h2>
+        <p>Erwachsene: <span id="result-adult"></span></p>
+        <p>Deaktiviert: <span id="result-handicape"></span></p>
+        <p>Student: <span id="result-etudiant"></span></p>
+        <p>Kind: <span id="result-enfant"></span></p>
+        <h2>Spukhaus</h2>
         <p>Standard: <span id="result-standard"></span></p>
-        <p>Special: <span id="result-special"></span></p>
-        <h2>Pack Promo</h2>
-        <p>Pack Adult: <span id="result-packAdult"></span></p>
-        <p>Pack Etudiant: <span id="result-packEtudiant"></span></p>
-        <p>Pack Enfant: <span id="result-packEnfant"></span></p>
-        <h2>Total</h2>
-        <p style="color:greenyellow">Valor Total: <span id="resul-global"></span></p>
+        <p>Besonders: <span id="result-special"></span></p>
+        <h2>Pack-Promo</h2>
+        <p>Erwachsene: <span id="result-packAdult"></span></p>
+        <p>Student: <span id="result-packEtudiant"></span></p>
+        <p>Kind: <span id="result-packEnfant"></span></p>
+
+        <!--<p>Kind: <span style="color:orange;" id="result-packEnfant"></span></p>-->
+
 
     </div>
 
@@ -42,6 +46,28 @@
             document.getElementById('result-packEnfant').innerText = params.get('packEnfant');
             document.getElementById('resul-global').innerText = params.get('resGlobal');
         });
+
+        document.addEventListener('DOMContentLoaded', function() {
+    const spans = [
+        'result-adult',
+        'result-handicape',
+        'result-etudiant',
+        'result-enfant',
+        'result-standard',
+        'result-special',
+        'result-packAdult',
+        'result-packEtudiant',
+        'result-packEnfant'
+    ];
+
+    spans.forEach(id => {
+        const span = document.getElementById(id);
+        const value = parseFloat(span.innerText) || 0;
+        if (value !== 0) {
+            span.style.color = 'greenyellow'; // Change to desired color
+        }
+    });
+});
     </script>
 </body>
 </html>
