@@ -285,7 +285,7 @@ button {
     text-decoration: none;
     color: white;
     margin-left: 85px;
-    background-color: orange;
+    background-color:grey;
     border-radius: 8px;
     overflow: hidden;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -300,7 +300,7 @@ button {
 
 .ticket-button span {
     display: block;
-    background-color: orangered;
+    background-color:blueviolet;
     text-align: center;
     font-size: 18px;
 }
