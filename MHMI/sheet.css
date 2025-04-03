@@ -1,0 +1,41 @@
+header{
+    background-color: blue;
+    height: 5em;
+    border-radius:30px;
+    text-align: center;
+    
+}
+
+nav{
+    background-color: yellow;
+    border-radius:30px;
+    text-align: center;
+    height: 5em;
+    width: 50em;
+    float:left;
+}
+
+
+section{
+    background-color: green;
+    border-radius:30px;
+    text-align: center;
+    padding: 1em;
+    float: right;
+}
+
+article{
+    background-color: red;
+    border-radius:30px;
+    text-align: center;
+    padding: 1em;
+    
+
+}
+
+footer{
+    background-color: blueviolet;
+    border-radius:30px;
+    text-align: center;
+    padding: 1em;
+}
