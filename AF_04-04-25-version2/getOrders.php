@@ -3,7 +3,7 @@ header('Content-Type: application/json');
 require 'config.php'; // Should define $dbo = new PDO(...);
 
 try {
-    $stmt = $dbo->query("
+    $stmt = $pdo->query("
         SELECT 
             o.orderNumber,
             o.orderDate,
