@@ -4,25 +4,39 @@ class Article
     private string $libelle;
     private float  $prixHt;
     private int $idTauxTva;
+    private static array $Articles=[];
 
     public function __construct(string $oLibelle, float $oPrixHt, int $oIdTauxTva)
     {
         $this->libelle = $oLibelle;
         $this->prixHt = $oPrixHt;
         $this->idTauxTva = $oIdTauxTva;
+        self::$Articles[] = $this;
     }
 
     public static function chargerArticle(int $idArticle, PDO $pdo)
     {
         
-        
-
-        $stmt = $pdo->query("SELECT * FROM articles WHERE id_article = $idArticle ");
+        $stmt = $pdo->query("SELECT libelle, prix_ht, id_taux_tva FROM articles WHERE id_article = $idArticle ");
+        $articles = []; // tableau vide
+    
         foreach ($stmt as $row) {
-            $articles[] = $row['libelle'];
-            //print_r($articles);
-            echo $row['libelle'] . "<br />";
+            $libelle = $row['libelle'];
+            $prixHt = $row['prix_ht'];
+            $idTauxTva = $row['id_taux_tva'];
+    
+            echo "Libellé: " . $libelle . "<br />";
+            echo "Prix HT: " . $prixHt . "<br />";
+            echo "ID Taux TVA: " . $idTauxTva . "<br /><br />";
+    
+/*             $articles[] = [
+                'libelle' => $libelle,
+                'prix_ht' => $prixHt,
+                'id_taux_tva' => $idTauxTva,
+            ]; */
         }
+    
+     /*    return $articles;  */
     }
 
     public function enregistrerArticle($pdo) {
@@ -44,7 +58,6 @@ class Article
             }
     }
 
-    private function enregistrerArticles() {}
 
     public static function modifierLibelleArticle(int $idArticle, string $iLibelle,PDO $pdo) {
 
@@ -80,6 +93,18 @@ class Article
         } catch (PDOException $e) {
             echo "Error: " . $e->getMessage();
         }
+    }
+
+    public static function arrayOfArticles() {
+
+        return self::$Articles;
+
+        //INSERT INTO articles (libelle, prix_ht,id_taux_tva) VALUES ("Teclado",30,3),("Monitor",50,2);
+    }
+
+    public static function clearArticles(): void
+    {
+        self::$Articles = [];
     }
 
     public function __toString()
