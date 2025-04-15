@@ -1,0 +1,19 @@
+ #DWWM 2024-11
+
+* Directivas:
+
+Un formulario simple me permite ingresar un país y su población en millones y debería volver a mostrarse con el siguiente encabezado:
+
+    Si la insercción es posible, un mensaje de validación en el cuadro verde "País: xxx insertado"
+    Si la insercción ya existe, un mensaje de rechazo en rojo "País xxx ya insertado"
+    Si el pais no está autorizado, un mensaje de advertencia naranja: "País xxx no autorizado" (por ejemplo, EE. UU.)
+
+Si tiene éxito, el país se inserta en la base de datos.
+
+*Requisitos:
+
+- una clase para el objeto de negocio del país (Pays.class.php)
+
+- una clase para la interfaz BD (PaysRepository.class.php)
+
+- una clase para la excepción especializada (PaysException .class.php) [la inserción de un error desencadena una excepción, que puede ser de 2 niveles, ¡naranja o roja!]
