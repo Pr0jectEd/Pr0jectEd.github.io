@@ -1,0 +1,4 @@
+SHOW COLUMNS FROM customers;
+SELECT MAX(customerNumber) FROM customers;
+ALTER TABLE customers MODIFY customerNumber INT NOT NULL AUTO_INCREMENT;
+ALTER TABLE customers AUTO_INCREMENT = 497;

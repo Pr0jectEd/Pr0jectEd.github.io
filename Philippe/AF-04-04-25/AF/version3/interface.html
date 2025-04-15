@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bons de commande</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        h1, h2 {
+            color: #333;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+        button,.submitButton {
+            padding: 10px 15px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            margin-top: 20px;
+        }
+        button,.submitButton:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <h1>Gestion de clients et commandes</h1>
+    <h2>Creation de Clients</h2>
+    <div id="clients">
+        <form id="formRegister" action="register.php" method="post">
+            <input type="text" name="customerName" id="customerName" placeholder="customerName">    
+            <input type="text" name="contactFirstName" id="contactFirstName" placeholder="contactFirstName">
+            <input type="text" name="contactLastName" id="contactLastName" placeholder="contactLastName">
+            <input type="tel" name="phone" id="phone" placeholder="phone">
+            <input type="text" name="addressLine1" id="addressLine1" placeholder="addressLine1">
+            <input type="text" name="addressLine2" id="addressLine2" placeholder="addressLine2">
+            <input type="text" name="city" id="city" placeholder="city">
+            <input type="text" name="state" id="state" placeholder="state">
+            <input type="number" min="0" name="postalCode" id="postalCode" placeholder="postalCode">
+            <input type="text" name="country" id="country" placeholder="country"><br><br>
+            <label for="salesRepEmployeeNumber">id Sales Representant</label><select id="salesRepEmployeeNumber" name="salesRepEmployeeNumber">
+                <option value="1166" >1166</option>
+                <option value="1370">1370</option>
+                <option value="1504">1504</option>
+                <br>
+                <input type="text" name="creditLimit" id="creditLimit" placeholder="creditLimit"><br>
+            <input class="submitButton" type="submit" value="submit">
+        </form>
+    </div>
+    <div id="commandes">
+        <h2>Liste des commandes</h2>
+    
+    <button class="submitButton" id="fetchData" onclick="loadOrders()">Charger les commandes</button>
+    
+    <table id="ordersTable">
+        <thead>
+            <tr>
+                <th>Commande</th>
+                <th>Date de la commande</th>
+                <th>Date de livraison</th>
+                <th>Statut</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Here i will put the orders (javascript+php) -->
+        </tbody>
+    </table>
+    <div id="answer"></div>
+    </div>
+    
+    <div id="clients">
+        <h2>Recherche des commandes de client</h2>
+        <form id="formClient" action="loadClient.php" method="post">
+            <input type="text" name="customerId"  id="customerId" placeholder="customerId">    
+            <input class="submitButton" type="submit" value="submit">
+        </form>
+        
+        <table id="clientsOrdersTable">
+            <thead>
+                <tr>
+                    <th>Prenom Client</th>
+                    <th>Date de la commande</th>
+                    <th>Date de livraison</th>
+                    <th>Statut</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Here i will put the specific client's orders (javascript+php) -->
+            </tbody>
+        </table>
+        <div id="answerClients"></div>
+    </div>
+    
+
+    <script src="script.js"></script>
+    <script src="loadOrders.js"></script>
+    <script src="scriptLoadClient.js"></script>
+</body>
+</html>

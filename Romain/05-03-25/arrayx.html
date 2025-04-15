@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Exo Romain</title>
+</head>
+
+<body>
+    <form id="array_form" method="post" action="arrayx.php">
+        <div>
+            <label for="phrase">Taper une phrase</label> <input type="text" name="phrase"
+                id="Phrase" value="">
+        </div>
+        <div>
+            <input type="checkbox" id="banane" name="fruits[]" value="banane" />
+            <label for="banane">banane</label><br>
+            <input type="checkbox" id="pomme" name="fruits[]" value="pomme" />
+            <label for="pomme">pomme</label><br>
+            <input type="checkbox" id="poire" name="fruits[]" value="poire" />
+            <label for="poire">poire</label><br>
+        </div>
+        <div>
+            <button type="submit">Login</button>
+        </div>
+    </form>
+    <div id="result"></div>
+    <script src="formx.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        td,th,table{
+            width: 50px;
+            height: 10px;
+            border: 2px solid black;
+        }
+    </style>
+
+    <title>Exo Romain</title>
+</head>
+
+<body>
+    <script src="https://code.jquery.com/jquery-3.6.3.min.js"></script><!--Ligne pour le framework de jquery-->
+    <form id="array_form" method="post" action="array.php"><!-- id used in the aform.js to locate the form /method used for the $.ajax -->
+        <div>
+            <label for="phrase">Tapez votre Prenom</label> <input type="text" name="phrase"
+                id="Phrase" value="">
+        </div>
+        <div>
+            <input type="checkbox" id="banane" name="fruits[]" value="banane" />
+            <label for="banane">banane</label><br>
+            <input type="checkbox" id="pomme" name="fruits[]" value="pomme" />
+            <label for="pomme">pomme</label><br>
+            <input type="checkbox" id="poire" name="fruits[]" value="poire" />
+            <label for="poire">poire</label><br>
+            <input type="checkbox" id="pastec" name="fruits[]" value="pastec" />
+            <label for="pastec">pastec</label><br>
+            <input type="checkbox" id="melon" name="fruits[]" value="melon" />
+            <label for="melon">melon</label><br>
+        </div>
+        <div>
+            <button type="submit">Login</button>
+        </div>
+
+    </form>
+    <div id="result"></div>
+<script src="aform.js"></script>
+</body>
+
+</html>

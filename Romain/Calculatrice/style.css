@@ -1,0 +1,41 @@
+#calculator {
+    width: 200px;
+    margin: 0 auto;
+    border: 1px solid #ccc;
+    padding: 10px;
+}
+
+#display {
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 5px;
+    font-size: 18px;
+    border: 1px solid #ccc;
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 5px;
+}
+
+button {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    cursor: pointer;
+}
+
+.operator {
+    background-color: #f0f0f0;
+}
+
+.equal {
+    background-color: #4CAF50;
+    color: white;
+}
+
+#clear {
+    background-color: #f44336;
+    color: white;
+}

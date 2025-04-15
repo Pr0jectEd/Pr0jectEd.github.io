@@ -1,0 +1,43 @@
+Entities and Their Attributes
+
+    Compte (User Account)
+        email (Primary Key)
+        mot_de_passe
+        nom_pseudo
+        actif (Boolean)
+        signalé (Boolean)
+        banni (Boolean)
+        date_création
+        type_de_compte (Enum: Rédacteur, Modérateur, Admin)
+        signalé_par (Foreign Key → Compte)
+        date_signalement
+        texte_signalement
+        banni_par (Foreign Key → Compte)
+        date_bannissement
+        texte_bannissement
+
+    Article (Blog Post)
+        article_id (Primary Key)
+        compte_email (Foreign Key → Compte)
+        modéré (Boolean)
+        effacé (Boolean)
+        public_privé (Enum)
+        titre
+        contenu
+        date_création
+        date_modification
+        modérateur_email (Foreign Key → Compte)
+        date_moderation
+        texte_moderateur
+
+    Commentaire (Comment)
+        commentaire_id (Primary Key)
+        compte_email (Foreign Key → Compte)
+        article_id (Foreign Key → Article)
+        modéré (Boolean)
+        effacé (Boolean)
+        date_création
+        date_modification
+        modérateur_email (Foreign Key → Compte)
+        date_moderation
+        texte_moderateur

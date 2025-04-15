@@ -1,0 +1,96 @@
+Posture:
+
+La posture: c'est la presentation general, non verbale.
+Communiquer avec l'interlocuteur
+Les mots et termes utilisés.
+
+Se presenter:
+Durée: 2-3 minutes
+On ne recite pas le CV
+Importance d'etre préparé
+Importance de remercier l'entretien par mail le lendemain.
+Besoin d'adapter le discours, mots positives: Evolution, progression, amelioration, enrichissement, 
+opportunite, perspective, challenge.
+
+Savoir qui est present lors de l'entretien:
+    -Alexandra Hénon (Organizatrice)
+    -David Moreliere
+    -Bastien Boudet (optional)
+
+Parcours:
+
+Etude:Developpement Web + Web Mobile.
+Fechas: 11/2024- 11/2025
+
+Arrivé en France: Apprentisage Francais.
+Fechas:12/2021 - 11 /2024
+
+Estudio:UNAD
+Fechas:03/2021 - 11/2021
+
+Trabajo:Password (0K)
+Fechas:02/2021 - 06/2021
+
+Trabajo:Maxconecta (0k)
+Fechas:02/2019 - 12/2019
+
+Estudio:Javeriana
+Fechas:02/2017 - 10/2018
+
+Conalcreditos:(0k)
+Fechas:02/2017 - 12/2017
+
+Jhonson Biomedical:
+Fechas: 01/2016 - 04/2016
+
+Trabajo:STTM - POLICE
+Fechas: 01/2015 - 12/2015
+
+Estudio:UCEVA 
+Fechas:01/2010 - 06/2015
+
+Trabajo: SICE (STTM - POLICE)
+Fechas: 05-2013 - 09/2014
+
+Je suis passionné par le développement web, en particulier le back-end. 
+Au-delà de mes compétences techniques, je suis une personne déterminée. 
+Pour vous donner un exemple, je suis arrivé en France il y a trois ans. 
+À cette époque, je ne parlais pas la langue française et je ne connaissais pas la culture. 
+Pourtant, avec la volonté de m'adapter, j'ai appris la langue, je me suis immergé dans la 
+culture et j'ai entrepris des recherches et des démarches qui m'ont permis de trouver la 
+formation que je suis actuellement.
+
+De plus, cette détermination m'a permis d'acquérir d'autres atouts, comme la capacité de 
+parler plusieurs langues, notamment l'anglais et l'italien. Je tiens également à souligner 
+que cette même détermination me permet de mener à bien les projets qui me sont confiés, en 
+faisant preuve de rigueur, de persévérance et d'un réel engagement.
+
+Recherche OpenIndus:
+
+- Personnes
+- Projets
+- Technologies
+
+Madame, Monsieur,
+
+Je me permets de vous contacter suite à votre offre de stage « Développement d'une plateforme de supervision web (H/F) ». 
+Cette opportunité correspond parfaitement à ma recherche de stage non rémunéré, qui se déroulera du 1er juin au 7 octobre 2025.
+
+Votre offre suscite un vif intérêt de ma part, car elle s'aligne étroitement avec ma formation actuelle en développement web et web mobile. 
+J'ai commencé à maitriser les langages frontend (HTML, CSS, JavaScript) et acquerir connaissances de base en SQL. 
+De plus, mon expérience antérieure m'a permis d'acquérir des connaissances des infrastructures réseaux, 
+des notions de sécurité réseau (notamment SSL) et du système Unix (CLI, Shell Script, SSH).
+
+Je suis particulièrement motivé à l'idée d'approfondir mes compétences dans les domaines que vous proposez, 
+tels que le langage Python et le développement embarqué C/C++. Je suis convaincu que ce stage serait une occasion idéale 
+pour mettre en pratique mes connaissances et en acquérir de nouvelles, tout en contribuant activement à vos projets.
+
+Afin de mieux comprendre les enjeux de votre entreprise et les opportunités offertes par ce stage, je souhaiterais 
+soliciter un entretien avec vous. Cela pourrait se faire par téléphone ou en personne, selon votre convenance.
+
+Veuillez trouver ci-joint mon CV avec le lien de mon LinkedIn.
+
+Je vous remercie par avance de l'attention que vous porterez à ma candidature et me tiens à votre disposition pour convenir d'un rendez-vous.
+
+Cordialement,
+Eduardo Gonzalez.
