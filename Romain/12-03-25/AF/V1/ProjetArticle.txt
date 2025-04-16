@@ -1,8 +1,0 @@
-Creation d'article:
-    -Formulaire en HTML.
-    -Recuperation de donnes.
-    -Creation de fichier avec le contenu.
-
-Affichage de contenu:
-    -Lecture du fichier.
-    -Affichage du fichier (format HTML -PERSISTENCE)

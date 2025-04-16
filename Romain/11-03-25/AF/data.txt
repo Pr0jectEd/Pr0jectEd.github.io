@@ -1,3 +1,0 @@
-John 25
-Jane 30
-Peter 22

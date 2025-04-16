@@ -1,3 +1,0 @@
-Ed | Details | This is my content
-Mike | Details 2 | Another content:
-Juan | Details 3 | Additional content.
